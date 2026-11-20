@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Nikita Hari | Re-engineering Education</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Ribbon -->
+  <div class="top-ribbon">
+    <span>Keynote Speaking, Academic Advisory &amp; Corporate Enrollment:</span>
+    <a href="#registration">Access Registration Form &rarr;</a>
+  </div>
+
+  <!-- Sticky Frosted Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#profile" class="brand">Dr. Nikita Hari</a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#profile">Profile</a>
+        <div class="dropdown">
+          <a href="#bio" class="dropbtn">Bio &#9662;</a>
+          <div class="dropdown-content">
+            <a href="#bio">Academic Leadership</a>
+            <a href="#education">Oxford &amp; Cambridge</a>
+            <a href="#srm">SRM University</a>
+          </div>
+        </div>
+        <a href="#recognition">Recognition</a>
+        <div class="dropdown">
+          <a href="#research" class="dropbtn">Research &#9662;</a>
+          <div class="dropdown-content">
+            <a href="#research">Engineering Education</a>
+            <a href="#research">Power Electronics &amp; AI</a>
+          </div>
+        </div>
+        <a href="#talks">Talks</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#registration" class="nav-cta">Registration</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Split Hero Section -->
+  <section id="profile" class="hero">
+    <div class="hero-grid">
+      <div class="hero-image-wrap">
+        <img src="images/hero-portrait.jpg" alt="Dr. Nikita Hari" class="hero-portrait" />
+      </div>
+      <div class="hero-content">
+        <span class="eyebrow">University of Oxford &bull; Cambridge PhD &bull; SRM University</span>
+        <h1>Dr. Nikita Hari</h1>
+        <p class="hero-tagline">Re-engineering Education. Engineering a Better World.</p>
+        <p class="hero-bio">
+          Head of Teaching, Research Design and Support Group at the University of Oxford’s Department of Engineering Science, and Faculty at SRM University. With a PhD from the University of Cambridge and a postdoctoral fellowship from Oxford, I design immersive, enterprise-infused learning models to inspire the next generation of holistic engineers.
+        </p>
+        <div class="hero-actions">
+          <a href="#bio" class="btn btn-primary">Explore Profile</a>
+          <a href="#registration" class="btn btn-outline">Book a Talk</a>
+        </div>
+        <div class="credential-pills">
+          <span>Head of Teaching &amp; Design Support, Oxford</span>
+          <span>Nehru-Cambridge PhD</span>
+          <span>Faculty, SRM University</span>
+          <span>UK Young Academy Member</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Rotating Photo Carousel (Apple TV+ Style) -->
+  <section id="talks" class="carousel-section">
+    <div class="section-header">
+      <h2>In Action &amp; Global Impact</h2>
+      <p>Keynotes, engineering education workshops, and academic leadership across the globe.</p>
+    </div>
+
+    <div class="carousel-wrapper" id="carouselWrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide active">
+          <img src="images/gallery-1.jpg" alt="University of Oxford Engineering Education" />
+          <div class="slide-caption">
+            <span class="badge">Academic Leadership</span>
+            <h3>University of Oxford &mdash; Engineering Science</h3>
+            <p>Leading teaching design, systems thinking, and AI-augmented engineering curricula.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/gallery-2.jpg" alt="Global Keynote Talks" />
+          <div class="slide-caption">
+            <span class="badge">Global Keynotes</span>
+            <h3>TEDx &amp; International STEM Forums</h3>
+            <p>Advocating for equitable representation, green energy, and transformative pedagogy.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/gallery-3.jpg" alt="Cambridge Doctoral Research" />
+          <div class="slide-caption">
+            <span class="badge">Research &amp; Innovation</span>
+            <h3>Cambridge PhD &amp; Power Electronics</h3>
+            <p>Pioneering Gallium Nitride (GaN) power converters and machine learning applications.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/gallery-4.jpg" alt="SRM University Collaboration" />
+          <div class="slide-caption">
+            <span class="badge">Global Academia</span>
+            <h3>SRM University Faculty &amp; Mentorship</h3>
+            <p>Bridging global engineering standards with student innovation and mentorship in India.</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="images/gallery-5.jpg" alt="Women in STEM Mentorship" />
+          <div class="slide-caption">
+            <span class="badge">Outreach &amp; Policy</span>
+            <h3>Empowering Young Women in STEM</h3>
+            <p>Mentoring aspiring engineers and advising governments, universities, and EdTech ventures.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="ctrl-btn" id="prevBtn" aria-label="Previous Slide">&lsaquo;</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="ctrl-btn" id="nextBtn" aria-label="Next Slide">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio & Academic Journey -->
+  <section id="bio" class="bio-section">
+    <div class="container">
+      <div class="bio-lead">
+        <h2>Bridging Research, Pedagogy &amp; Policy</h2>
+        <p>
+          Co-founder of two EdTech startups and scientific advisor to governments, universities, and emerging enterprises, Dr. Nikita Hari works at the intersection of engineering innovation, socio-cultural inclusion, and science diplomacy.
+        </p>
+      </div>
+
+      <div id="education" class="milestones-grid">
+        <div class="milestone-card">
+          <span class="milestone-tag">Current Leadership</span>
+          <h3>University of Oxford</h3>
+          <p>Head of Teaching, Research Design and Support Group, Department of Engineering Science &bull; Former Schlumberger Faculty for the Future Postdoctoral Fellow.</p>
+        </div>
+        <div class="milestone-card">
+          <span class="milestone-tag">Doctoral Training</span>
+          <h3>University of Cambridge</h3>
+          <p>PhD in Electrical Engineering as a Nehru-Cambridge Scholar (Churchill College), specializing in wide-bandgap power electronics.</p>
+        </div>
+        <div id="srm" class="milestone-card">
+          <span class="milestone-tag">Faculty &amp; Roots</span>
+          <h3>SRM University &amp; CUSAT</h3>
+          <p>Faculty at SRM University, MTech alumnus, and Gold Medalist graduate from CUSAT, championing cross-cultural engineering education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recognition & Distinctions -->
+  <section id="recognition" class="recognition-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Selected Recognition</h2>
+        <p>Honors across engineering research, higher education leadership, and global impact.</p>
+      </div>
+      <div class="recognition-grid">
+        <div class="rec-item">Inaugural Google Higher Education Faculty AI Fellow</div>
+        <div class="rec-item">Member, UK Young Academy</div>
+        <div class="rec-item">Senior Fellow of Advance HE (SFHEA)</div>
+        <div class="rec-item">Top 50 Women in Engineering in the UK (WES)</div>
+        <div class="rec-item">Ambassador, Queen Elizabeth Prize for Engineering</div>
+        <div class="rec-item">Schlumberger Faculty for the Future Fellow</div>
+        <div class="rec-item">Clinton Global Initiative Changemaker</div>
+        <div class="rec-item">Engineering Professors’ Council RIKT Steering Committee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Core Offerings (3-Column Grid) -->
+  <section id="research" class="pillars-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Research, Pedagogy &amp; Advisory</h2>
+        <p>Designing holistic engineering frameworks for a rapidly evolving world.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <h3>Research &amp; Innovation</h3>
+          <p>
+            Over a decade of multidisciplinary research spanning machine learning for Gallium Nitride (GaN) power electronics and socio-technical engineering education built on <em>Engineering Habits of Mind (EHoM)</em>.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <h3>Pedagogy &amp; Curriculum</h3>
+          <p>
+            Fifteen years of designing challenge-based and AI-augmented engineering curricula across general, electrical, and power electronics. Available for guest lectures and faculty workshops.
+          </p>
+        </div>
+        <div class="pillar-card">
+          <h3>Consultancy &amp; Mentoring</h3>
+          <p>
+            Strategic R&amp;D and curriculum advisory for institutions and startups, alongside dedicated career and research mentoring for young innovators—especially aspiring women in STEM.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration & Speaker Inquiry -->
+  <section id="registration" class="registration-section">
+    <div class="container">
+      <div class="form-card">
+        <h2>Speaker Booking &amp; Engagement Inquiry</h2>
+        <p>
+          Invite Dr. Nikita Hari for keynotes, academic seminars, institutional advisory, or corporate workshops. Complete the inquiry form below and our team will respond within two business days.
+        </p>
+        <!-- Replace the src URL below with your exact Google Form embed URL if needed -->
+        <div class="form-placeholder">
+          <a href="https://docs.google.com/forms" target="_blank" rel="noopener" class="btn btn-primary">Open Speaker Registration Form &nearr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer & Contact -->
+  <footer id="contact" class="footer">
+    <div class="container footer-flex">
+      <div>
+        <h4>Dr. Nikita Hari</h4>
+        <p>Re-engineering Education &bull; Engineering a Better World</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:nikita.hari@eng.ox.ac.uk">nikita.hari@eng.ox.ac.uk</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=UAYaF6wAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
