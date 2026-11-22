@@ -670,3 +670,310 @@ box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06
 .creative-social-tile:hover .creative-fb-mark {
   background-color: #1877f2;
 }
+/* Match Reference Header Spacing & Hero Styling */
+.navbar .nav-container {
+  max-width: 1120px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  height: 54px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+}
+
+.navbar .brand {
+  margin-right: auto !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.navbar #navLinks.nav-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
+  gap: 28px !important;
+  width: auto !important;
+}
+
+.navbar #navLinks.nav-links > a,
+.navbar #navLinks.nav-links > .dropdown {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 13px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.navbar #navLinks.nav-links > a.nav-cta {
+  padding: 6px 14px !important;
+  border-radius: 980px !important;
+  background: #1d1d1f !important;
+  color: #ffffff !important;
+}
+
+/* Single Dropdown Behavior */
+.navbar .dropdown {
+  position: relative !important;
+}
+
+.navbar .dropdown > .dropdown-content {
+  display: none !important;
+  position: absolute !important;
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  min-width: 220px !important;
+  padding: 8px 0 !important;
+  background: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 12px !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+  z-index: 9999 !important;
+}
+
+.navbar .dropdown:hover > .dropdown-content,
+.navbar .dropdown.open > .dropdown-content {
+  display: block !important;
+}
+
+/* Hero Eyebrow Pill, Tagline & Primary Blue Button */
+#profile .eyebrow,
+.hero-content .eyebrow {
+  display: inline-block !important;
+  background-color: #eef5ff !important;
+  color: #0071e3 !important;
+  border: none !important;
+  border-radius: 14px !important;
+  padding: 8px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 14px !important;
+}
+
+#profile .hero-tagline,
+.hero-content .hero-tagline {
+  display: block !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  color: #0071e3 !important;
+  font-size: 19px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  margin-bottom: 18px !important;
+}
+
+.hero-actions .btn-primary,
+.btn-primary {
+  background: #0071e3 !important;
+  background-color: #0071e3 !important;
+  color: #ffffff !important;
+  border: 1px solid #0071e3 !important;
+}
+
+.hero-actions .btn-primary:hover,
+.btn-primary:hover {
+  background: #005bb5 !important;
+  background-color: #005bb5 !important;
+  border-color: #005bb5 !important;
+}
+/* Force Visible Spacing Between Every Navbar Item */
+.navbar #navLinks.nav-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap !important;
+}
+
+.navbar #navLinks.nav-links > a:not(.nav-cta),
+.navbar #navLinks.nav-links > .dropdown {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-right: 26px !important;
+  margin-left: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.navbar #navLinks.nav-links > a.nav-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin-left: 4px !important;
+  margin-right: 0 !important;
+  flex-shrink: 0 !important;
+}
+/* ---------- Hero text ---------- */
+.eyebrow {
+  display: inline-block;
+  background: #eef5ff;
+  color: var(--accent);
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.hero-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+.hero-bio {
+  max-width: 58ch;
+  font-size: 1.04rem;
+  line-height: 1.68;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+/* ---------- Layout alignment ---------- */
+.hero { padding: 72px 0 80px; }
+.hero-grid { padding: 0 24px; }
+
+/* ---------- Nav ---------- */
+.nav-links { gap: 28px; }
+.dropdown { display: flex; align-items: center; }
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content { display: block; }
+
+/* ---------- Credential chips ---------- */
+.credential-pills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.credential-pills span {
+  font-size: 13px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+/* ---------- Cards: one hover style ---------- */
+.milestone-card, .pillar-card, .rec-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.milestone-card::before, .pillar-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, #002147, #0071e3);
+  opacity: 0;
+  transition: opacity .25s;
+}
+@media (hover: hover) {
+  .milestone-card:hover, .pillar-card:hover, .rec-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(15,23,42,.12);
+  }
+  .milestone-card:hover::before, .pillar-card:hover::before { opacity: 1; }
+}
+
+/* ---------- Enquiry layout ---------- */
+.form-card { flex: 1 1 560px; max-width: 720px; margin: 0; }
+
+/* ---------- Global ---------- */
+html { scroll-padding-top: 70px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+@media (max-width: 700px) {
+  .credential-pills { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
+  .form-card { order: -1; flex: none; width: 100%; }
+  .social-side-stack { flex-direction: row; gap: 28px; }
+}
+/* ===== Final overrides (keep at the very bottom) ===== */
+
+/* 1. Eyebrow: one line, no border/background, black */
+#profile .eyebrow,
+.hero-content .eyebrow {
+  display: block !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: #111827 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+  margin-bottom: 14px !important;
+}
+
+/* 2. Tagline: normal case, no border, black */
+#profile .hero-tagline,
+.hero-content .hero-tagline {
+  display: block !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #111827 !important;
+  text-transform: none !important;
+  letter-spacing: -0.01em !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  max-width: none !important;
+  margin-bottom: 18px !important;
+}
+
+/* 3. Book a Talk: black fill, white text */
+.hero-actions .btn-primary,
+.btn-primary {
+  background: #1d1d1f !important;
+  background-color: #1d1d1f !important;
+  border: 1px solid #1d1d1f !important;
+  color: #ffffff !important;
+}
+.hero-actions .btn-primary:hover,
+.btn-primary:hover {
+  background: #3a3a3c !important;
+  background-color: #3a3a3c !important;
+  border-color: #3a3a3c !important;
+}
+
+/* 4. Explore Profile: outline only, no fill */
+.hero-actions .btn-outline {
+  background: transparent !important;
+  border: 1px solid #1d1d1f !important;
+  color: #1d1d1f !important;
+}
+.hero-actions .btn-outline:hover {
+  background: #f5f5f7 !important;
+}
+
+/* 5. Milestone tags (Current Leadership, Doctoral Research, Academic Roots) */
+.milestone-card .milestone-tag,
+.milestone-tag {
+  color: #111827 !important;
+}
+
+/* Let the eyebrow wrap on small screens */
+@media (max-width: 700px) {
+  #profile .eyebrow,
+  .hero-content .eyebrow { white-space: normal !important; }
+}
+/* Remove top bar on card hover */
+.milestone-card::before,
+.pillar-card::before,
+.milestone-card:hover::before,
+.pillar-card:hover::before {
+  display: none !important;
+  content: none !important;
+}
+.milestone-card:hover,
+.pillar-card:hover,
+.rec-item:hover {
+  outline: none !important;
+}
