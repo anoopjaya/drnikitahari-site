@@ -977,3 +977,17 @@ html { scroll-padding-top: 70px; }
 .rec-item:hover {
   outline: none !important;
 }
+/* Keep Dropdown Hover Connected Without Changing Visual Spacing */
+.navbar .dropdown > .dropdown-content {
+  top: calc(100% + 6px) !important;
+}
+
+.navbar .dropdown > .dropdown-content::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: transparent;
+}
