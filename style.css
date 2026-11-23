@@ -991,3 +991,69 @@ html { scroll-padding-top: 70px; }
   height: 10px;
   background: transparent;
 }
+/* ===== Mobile Navbar & Overflow Fix (keep at the very bottom) ===== */
+@media (max-width: 860px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .navbar .nav-links {
+    display: none !important;
+  }
+
+  .navbar .nav-links.open {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    position: absolute !important;
+    top: 54px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    padding: 18px 24px !important;
+    gap: 14px !important;
+    border-bottom: 1px solid var(--border-light) !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+    z-index: 9999 !important;
+  }
+
+  .navbar #navLinks.nav-links.open > a:not(.nav-cta),
+  .navbar #navLinks.nav-links.open > .dropdown {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .navbar .dropdown {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .navbar .dropdown > .dropdown-content {
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 4px 0 4px 14px !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .navbar #navLinks.nav-links.open > a.nav-cta {
+    margin-left: 0 !important;
+    margin-top: 4px !important;
+  }
+
+  .hero {
+    padding: 40px 0 56px !important;
+  }
+
+  .hero-grid {
+    gap: 28px !important;
+  }
+
+  .hero-portrait {
+    max-height: 360px !important;
+  }
+}
