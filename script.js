@@ -65,6 +65,57 @@ document.addEventListener("DOMContentLoaded", () => {
   mobileToggle.addEventListener("click", () => {
     navLinks.classList.toggle("open");
   });
+// Close all dropdowns cleanly
+  const dropdowns = Array.from(document.querySelectorAll(".navbar .dropdown"));
 
+  function closeAllDropdowns() {
+    dropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("open");
+      const btn = dropdown.querySelector(".dropbtn");
+      if (btn) {
+        btn.setAttribute("aria-expanded", "false");
+        if (document.activeElement === btn) {
+          btn.blur();
+        }
+      }
+    });
+  }
+
+  dropdowns.forEach((dropdown) => {
+    const btn = dropdown.querySelector(".dropbtn");
+    if (!btn) return;
+
+    const isLeadership = btn.textContent.includes("Leadership");
+
+    btn.addEventListener("click", (e) => {
+      if (isLeadership) {
+        closeAllDropdowns();
+        return; // Allow normal navigation to #recognition
+      }
+
+      e.preventDefault();
+      const willOpen = !dropdown.classList.contains("open");
+      closeAllDropdowns();
+
+      if (willOpen) {
+        dropdown.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+    });
+  });
+
+  // Close open dropdown when clicking outside or on another navbar link
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".navbar .dropdown")) {
+      closeAllDropdowns();
+    }
+  });
+
+  // Close dropdown after selecting an item inside it
+  document.querySelectorAll(".navbar .dropdown-content a").forEach((link) => {
+    link.addEventListener("click", () => {
+      closeAllDropdowns();
+    });
+  });
   startAutoPlay();
 });
