@@ -403,12 +403,13 @@ html {
     border-bottom: 1px solid var(--border-light);
   }
   .mobile-toggle { display: block; }
-}.domain-card:hover,
+}
+.domain-card:hover,
 .pillar-card:hover,
 .milestone-card:hover {
-transform: translateY(-6px);
-box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
-transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .pillar-card::before,
 .milestone-card::before {
@@ -426,63 +427,64 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
 .pillar-card:hover::before,
 .milestone-card:hover::before {
   opacity: 1;
-}.hero-content .kicker,
+}
+.hero-content .kicker,
 .hero-content .hero-eyebrow,
 .hero-content .credentials-line,
 #profile .eyebrow,
 #profile .kicker,
 #profile p:first-of-type {
-display: inline-block;
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-font-size: 0.78rem;
-font-weight: 700;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: #005bb5;
-background-color: #eef5ff;
-border: 1px solid #cfe2ff;
-border-radius: 999px;
-padding: 6px 14px;
-margin-bottom: 14px;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #005bb5;
+  background-color: #eef5ff;
+  border: 1px solid #cfe2ff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-bottom: 14px;
 }
 #profile h1 {
-font-family: Georgia, "Times New Roman", Times, serif;
-font-size: clamp(2.4rem, 4.5vw, 3.6rem);
-font-weight: 700;
-line-height: 1.08;
-letter-spacing: -0.025em;
-color: #111827;
-margin-bottom: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #111827;
+  margin-bottom: 12px;
 }
 
 .hero-content h2,
 #profile h2,
 .hero-tagline {
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-font-size: 1.15rem;
-font-weight: 600;
-letter-spacing: -0.01em;
-color: #0071e3;
-margin-bottom: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #0071e3;
+  margin-bottom: 16px;
 }
 
 .hero-content p,
 #profile p {
-max-width: 58ch;
-font-size: 1.04rem;
-line-height: 1.68;
-color: #4b5563;
-margin-bottom: 24px;
+  max-width: 58ch;
+  font-size: 1.04rem;
+  line-height: 1.68;
+  color: #4b5563;
+  margin-bottom: 24px;
 }
 
 .hero-content .pill,
 .hero-content .badge,
 .hero-content span[class*="pill"],
 .hero-content span[class*="tag"] {
-border-radius: 999px;
-padding: 6px 14px;
-font-size: 0.84rem;
-font-weight: 500;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.84rem;
+  font-weight: 500;
 }
 .recognition-item,
 .recognition-list li,
@@ -492,8 +494,8 @@ font-weight: 500;
 .bio-card,
 .pillar-card,
 .card {
-transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-will-change: transform, box-shadow;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  will-change: transform, box-shadow;
 }
 
 .recognition-card:hover,
@@ -505,8 +507,8 @@ will-change: transform, box-shadow;
 .bio-card:hover,
 .pillar-card:hover,
 .card:hover {
-transform: translateY(-5px);
-box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
 }
 .recognition-item,
 .recognition-list li,
@@ -516,10 +518,10 @@ box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06
 .bio-card,
 .pillar-card,
 .card {
-transition: transform 0.25s ease, box-shadow 0.25s ease, outline-color 0.25s ease, border-color 0.25s ease;
-outline: 2px solid transparent;
-outline-offset: 2px;
-will-change: transform, box-shadow, outline-color;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, outline-color 0.25s ease, border-color 0.25s ease;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  will-change: transform, box-shadow, outline-color;
 }
 
 .recognition-card:hover,
@@ -531,10 +533,10 @@ will-change: transform, box-shadow, outline-color;
 .bio-card:hover,
 .pillar-card:hover,
 .card:hover {
-transform: translateY(-5px);
-outline: 2px solid #e09f24;
-outline-offset: 2px;
-box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
+  transform: translateY(-5px);
+  outline: 2px solid #e09f24;
+  outline-offset: 2px;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.06);
 }
 .pillar-card:hover,
 .pillar-card:hover::before,
@@ -991,6 +993,18 @@ html { scroll-padding-top: 70px; }
   height: 10px;
   background: transparent;
 }
+
+/* Keep "Spotlight : Global Impact In Action" on one line on desktop */
+@media (min-width: 861px) {
+  .carousel-section .section-header {
+    max-width: 920px;
+  }
+
+  .carousel-section .section-header h2 {
+    white-space: nowrap;
+  }
+}
+
 /* ===== Mobile Navbar & Overflow Fix (keep at the very bottom) ===== */
 @media (max-width: 860px) {
   html,
